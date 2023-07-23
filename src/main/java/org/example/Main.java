@@ -8,7 +8,7 @@ public class Main {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
 
         // get Car bean from the Spring container
-        Car car = context.getBean("car", Car.class);
+        Car car = context.getBean(Car.class);
 
         // start car
         car.startCar();
