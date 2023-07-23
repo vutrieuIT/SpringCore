@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.vehicle.Car;
+import org.example.vehicle.Plane;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class Main {
@@ -12,5 +14,9 @@ public class Main {
 
         // start car
         car.startCar();
+
+        Plane plane = context.getBean(Plane.class);
+
+        plane.startPlane();
     }
 }

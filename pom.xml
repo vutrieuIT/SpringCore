@@ -12,7 +12,6 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring.version>6.0.2</spring.version>
-        <jdbc.version>6.0.2</jdbc.version>
     </properties>
 
     <dependencies>
@@ -71,7 +70,12 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Add other Spring modules as needed -->
+        <!-- AspectJ -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aspects</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
     </dependencies>
 
 </project>

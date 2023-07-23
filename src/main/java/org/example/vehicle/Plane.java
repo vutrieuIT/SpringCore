@@ -1,19 +1,17 @@
-package org.example;
+package org.example.vehicle;
 
+import org.example.Engine;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
-public class Car {
-
-    private Engine engine;
+public class Plane {
 
     @Autowired
-    public Car(Engine engine){
-        this.engine = engine;
-    }
+    private Engine engine;
 
-    public void startCar(){
+    public void startPlane(){
+        System.out.println("Plane: ");
         engine.start();
     }
 }
