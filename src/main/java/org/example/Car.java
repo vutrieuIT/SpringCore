@@ -8,7 +8,6 @@ public class Car {
 
     private Engine engine;
 
-    @Autowired
     public Car(Engine engine){
         this.engine = engine;
     }
