@@ -9,7 +9,7 @@ public class Car {
     private Engine engine;
 
     @Autowired
-    public void setEngine(Engine engine){
+    public Car(Engine engine){
         this.engine = engine;
     }
 
